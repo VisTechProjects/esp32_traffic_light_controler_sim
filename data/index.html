@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vis Traffic Light Control</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>   
+
+    <h1 onclick=openPopup_time_waisted()>Welcome to Vis Traffic Light Control</h1>
+    <div class="container">
+        <img onclick=openPopup_time_waisted() class="traffic-light" id="traffic-light" src="images/trfc_lt_all_on.png" alt="Traffic Light">
+        <div>
+            <!-- Button to Open Light Cycle Delay Form -->
+            <button onclick="openPopup()">Update Light Cycle Delay</button>
+
+            <!-- Light Cycle Delay Popup -->
+            <div class="overlay" id="overlay" onclick="closePopup()"></div>
+            <div class="popup" id="popup">
+                <form id="setDelayForm">
+                    <label>Red Delay (Sec):</label>
+                    <input type="number" name="red_delay" step="0.5" value="5.5"><br>
+                    <label>Yellow Delay (Sec):</label>
+                    <input type="number" name="yellow_delay" step="0.5" value="3.5"><br>
+                    <label>Green Delay (Sec):</label>
+                    <input type="number" name="green_delay" step="0.5" value="3.5"><br>
+                    <input type="submit" value="Update">
+                    <input type="reset" class="cancel-button" value="Cancel" onclick="closePopup(event)">
+                </form>
+            </div>
+
+            <!-- Blink Mode Selection -->
+            <form id="blinkModeForm">
+                <label>Blink Color:</label>
+                <select name="color" id="blinkColorSelect">
+                    <option value="all">All Colors</option>
+                    <option value="random" disabled>Random</option>
+                    <option value="red">Red</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="green">Green</option>
+                </select>
+            </form>
+
+            <!-- Toggle Modes -->
+            <div class="toggle-container">
+                <label class="switch">
+                    <input type="checkbox" id="toggleModeSwitch" onclick="toggleMode()">
+                    <span class="slider"></span>
+                </label>
+                <span id="toggleModeLabel">Cycle Mode</span>
+            </div>
+
+            <br>
+
+            <div class="toggle-container">
+                <label class="switch">
+                    <input type="checkbox" id="toggleCatModeSwitch" onclick="toggleCatMode()">
+                    <span class="slider"></span>
+                </label>
+                <span id="toggleCatModeLabel">Normal Mode</span>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
