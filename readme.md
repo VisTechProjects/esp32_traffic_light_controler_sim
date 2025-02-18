@@ -1,15 +1,15 @@
 # Traffic Light Signal Controller
 
 <div style="display: flex; align-items: center; flex-wrap: nowrap;">
-    <img src="images/traffic_light.gif" alt="Traffic Light" width="100" height="200" style="margin-right: 10px;">
-    <img src="data/images/trfc_lt_all_on.png" alt="Traffic Light" width="100" height="200" style="margin-right: 10px;">
     <span style="font-size: 20px; max-width: 500px; text-align: justify;">
         This random project is a traffic light controller. The controller mimics the behavior of a standard 
         traffic light system, cycling through red, yellow, and green lights. Use it with LEDs or connect some 
         relays to a real traffic light!
     </span>
+</div><br>
+    <img src="images/traffic_light.gif" alt="Traffic Light" width="100" height="200" style="margin-right: 10px;">
+    <img src="data/images/trfc_lt_all_on.png" alt="Traffic Light" width="100" height="200" style="margin-right: 10px;">
     <img src="data/images/trfc_lt_all_on_cat.png" alt="Traffic Light" width="100" height="200" style="margin-left: 10px;">
-</div>
 
 ## Features
 
