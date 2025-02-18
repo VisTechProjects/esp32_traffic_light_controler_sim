@@ -8,8 +8,8 @@ unsigned long blinkInterval = 1000;
 bool use_wifi = false; // connect to wifi or create an access point
 
 // for connecting to a network, use_wifi must be true
-const char *ssid = "36Batavia";
-const char *password = "6472006991";
+const char *ssid = "wifi";
+const char *password = "pass";
 
 // or set up an access point
 const char *AP_ssid = "Traffic Lights";
