@@ -5,11 +5,11 @@
 // Traffic light blink mode cycle in milliseconds
 unsigned long blinkInterval = 1000;
 
-bool use_wifi = false; // connect to wifi or create an access point
+bool use_wifi = true; // connect to wifi or create an access point
 
 // for connecting to a network, use_wifi must be true
-const char *ssid = "wifi";
-const char *password = "pass";
+const char *ssid = "36Batavia";
+const char *password = "6472006991";
 
 // or set up an access point
 const char *AP_ssid = "Traffic Lights";
