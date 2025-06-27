@@ -5,21 +5,15 @@
 #define LED_yellow_pin 14
 #define LED_green_pin 27
 
-// Traffic light blink mode cycle in milliseconds
-unsigned long blinkInterval = 1000;
+unsigned long blinkInterval = 1000;        // Traffic light blink mode interval in milliseconds
+const unsigned long dangerHoldTime = 3000; // How long you must stay in the danger zone before flashing (3s)
 
-unsigned long distance_max = 100; // Maximum distance in cm for the distance sensor
-unsigned long distance_warning = 50; // Warning distance in cm
-unsigned long distance_danger = 10; // Danger distance in cm
+#define DISTANCE_SENSOR_ENABLED // programticly enable distance sensor
 
-bool distance_sensor_enabled = false; // Default to false
+// for connecting to wifi, uncomment both
+#define WIFI_SSID "36Batavia"
+#define WIFI_PASS "6472006991"
 
-bool use_wifi = false; // connect to wifi or create an access point
-
-// for connecting to a network, use_wifi must be true
-const char *ssid = "your_wifi_ssid";
-const char *password = "your_wifi_password";
-
-// or set up an access point
-const char *AP_ssid = "Traffic Lights";
-// const char *AP_pass = "1234578"; //uncomment to add a password
+// or set up an access point, // use_wifi must be commented
+#define AP_SSID "Traffic Lights"
+// #define AP_PASS "1234578" //uncomment to add a password
