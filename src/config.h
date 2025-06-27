@@ -1,11 +1,14 @@
+#define VERSION "0.1"
+
+// pins for relay board
 #define LED_red_pin 16
 #define LED_yellow_pin 17
 #define LED_green_pin 18
 
-// Traffic light blink mode cycle in milliseconds
-unsigned long blinkInterval = 1000;
+unsigned long blinkInterval = 1000;        // Traffic light blink mode interval in milliseconds
+const unsigned long dangerHoldTime = 3000; // How long you must stay in the danger zone before flashing (3s)
 
-bool use_wifi = false; // connect to wifi or create an access point
+#define DISTANCE_SENSOR_ENABLED // programticly enable distance sensor
 
 // for connecting to a network, use_wifi must be true
 const char *ssid = "wifi";
