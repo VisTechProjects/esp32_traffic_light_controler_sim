@@ -11,8 +11,8 @@ const unsigned long dangerHoldTime = 3000; // How long you must stay in the dang
 #define DISTANCE_SENSOR_ENABLED // programticly enable distance sensor
 
 // for connecting to wifi, uncomment both
-#define WIFI_SSID "36Batavia"
-#define WIFI_PASS "6472006991"
+// #define WIFI_SSID "36Batavia"
+// #define WIFI_PASS "6472006991"
 
 // or set up an access point, // use_wifi must be commented
 #define AP_SSID "Traffic Lights"
