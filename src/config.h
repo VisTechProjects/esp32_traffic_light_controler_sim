@@ -1,4 +1,5 @@
-#define VERSION "0.1"
+#define VERSION_FIRMWARE "0.1"
+#define VERSION_SPIFFS "0.1"
 
 // pins for relay board
 #define LED_red_pin 12
@@ -13,7 +14,9 @@ const unsigned long dangerHoldTime = 3000; // How long you must stay in the dang
 // for connecting to wifi, uncomment both
 // #define WIFI_SSID "36Batavia"
 // #define WIFI_PASS "6472006991"
+#define WIFI_SSID "phone"
+#define WIFI_PASS "12345678"
 
 // or set up an access point, // use_wifi must be commented
-#define AP_SSID "Traffic Lights"
-// #define AP_PASS "1234578" //uncomment to add a password
+// #define AP_SSID "Traffic Lights"
+// #define AP_PASS "12345678" //uncomment to add a password, 8 char minimum
