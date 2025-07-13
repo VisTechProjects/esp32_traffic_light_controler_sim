@@ -1,6 +1,3 @@
-#define VERSION_FIRMWARE "0.1"
-#define VERSION_SPIFFS "0.1"
-
 // pins for relay board
 #define LED_red_pin 12
 #define LED_yellow_pin 14
