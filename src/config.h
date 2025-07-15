@@ -6,6 +6,7 @@
 unsigned long blinkInterval = 1000;        // Traffic light blink mode interval in milliseconds
 const unsigned long dangerHoldTime = 3000; // How long you must stay in the danger zone before flashing (3s)
 
+// UART for TF-Luna
 #define DISTANCE_SENSOR_ENABLED // programticly enable distance sensor
 
 // for connecting to wifi, uncomment both
