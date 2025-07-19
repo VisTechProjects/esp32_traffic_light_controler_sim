@@ -15,6 +15,6 @@ const unsigned long dangerHoldTime = 3000; // How long you must stay in the dang
 // #define WIFI_SSID "phone"
 // #define WIFI_PASS "12345678"
 
-// or set up an access point, // use_wifi must be commented
+// or set up an access point
 // #define AP_SSID "Traffic Lights"
 // #define AP_PASS "12345678" //uncomment to add a password, 8 char minimum
