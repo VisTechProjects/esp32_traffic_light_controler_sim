@@ -9,6 +9,10 @@ const unsigned long dangerHoldTime = 1000; // How long you must stay in the dang
 // UART for TF-Luna
 #define DISTANCE_SENSOR_ENABLED // programticly enable distance sensor
 
+// Onboard RGB LED (Freenove ESP32-WROOM)
+#define RGB_LED_ENABLED
+#define RGB_LED_PIN 16
+
 // for connecting to wifi, uncomment both
 #define WIFI_SSID "36Batavia"
 #define WIFI_PASS "6472006991"
